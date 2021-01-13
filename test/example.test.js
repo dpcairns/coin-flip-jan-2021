@@ -15,17 +15,18 @@ test('it should return heads when given a 1 as an argument', (expect) => {
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
+});
 
-        //Arrange
+test('it should return tails when given a 0 as an argument', (expect) => {
+    //Arrange
     // Set up your arguments and expectations
-    const expected2 = 'tails';
+    const expected = 'tails';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual2 = makeHeadsOrTails(0);
+    const actual = makeHeadsOrTails(0);
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual2, expected2);
-
+    expect.equal(actual, expected);
 });
