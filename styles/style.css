@@ -122,3 +122,11 @@ footer {
     width: 100px;
     height: 100px;
   }
+
+  input {
+      display: none;
+  }
+
+  input:checked + img {
+    border: solid 5px magenta;  
+  }

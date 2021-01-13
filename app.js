@@ -35,7 +35,12 @@ guessButton.addEventListener('click', () => {
     }
 
     // 4) We need to display new wins and losses
+    updateResultSpans();
+});
+
+function updateResultSpans() {
     winSpan.textContent = wins;
     lossSpan.textContent = total - wins;
     totalSpan.textContent = total;
-});
+}
+
